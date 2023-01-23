@@ -23,7 +23,7 @@ A Random function is used which returns the output randomly. This is being imple
 
 ### Wait
 
-A wait function basically sleeps or pauses the process randomly. Currently, the wait function makes use of randomization and waits for 11 to 15 seconds. Sleep function helps us to have users hit the API randomly.
+A wait function basically sleeps or pauses the process randomly. Currently, the wait function makes use of randomization and waits for 6 to 13 seconds. Sleep function helps us to have users hit the API randomly.
 
 ### Planned API
 

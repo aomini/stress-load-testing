@@ -17,10 +17,7 @@ const resolverRequest = (http, lib) => {
       return lib.exhaust(request);
     }
 
-    const response = http.get(`${url}/resolver`, {
-      "hc-host": "alpha",
-      "hc-store": "alpha",
-    });
+    const response = http.get(`${url}/resolver`);
     console.log("😀 STATUS: ", response.status);
     if (response.status > 499) {
       console.log("🔴 Process exit");

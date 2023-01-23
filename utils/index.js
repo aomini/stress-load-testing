@@ -14,7 +14,7 @@ export const prettyPrint = (json) => {
 };
 
 export const wait = () => {
-  const rand = random(11, 15);
+  const rand = random(6, 13);
   console.log("⏰ Waiting for ", `${rand} seconds...`);
   sleep(rand);
 };

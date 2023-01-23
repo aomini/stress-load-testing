@@ -18,7 +18,7 @@ const cartRequest = (http, lib) => {
     const response = http.get(`${url}/checkout/cart`, {
       headers: {
         "Content-type": "application/json",
-        "hc-host": "sr.hdlecommercelab.cloud",
+        "hc-host": "sailracing.com",
         "hc-channel": "se",
         "hc-store": "en",
         "hc-cart": cartID,

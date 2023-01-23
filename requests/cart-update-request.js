@@ -21,7 +21,7 @@ const cartUpdateRequest = (http, lib) => {
       {
         headers: {
           "Content-type": "application/json",
-          "hc-host": "sr.hdlecommercelab.cloud",
+          "hc-host": "sailracing.com",
           "hc-channel": "se",
           "hc-store": "en",
           "hc-cart": cart_id,

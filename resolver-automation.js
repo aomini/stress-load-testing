@@ -6,7 +6,7 @@ export default function () {
   const params = {
     headers: {
       "Content-type": "application/json",
-      "hc-host": "sr.hdlecommercelab.cloud",
+      "hc-host": "sailracing.com",
     },
   };
 

@@ -30,7 +30,7 @@ export const transformResponse = (response) => {
 const params = {
   headers: {
     "Content-type": "application/json",
-    "hc-host": "sr.hdlecommercelab.cloud",
+    "hc-host": "sailracing.com",
     "hc-channel": "se",
     "hc-store": "en",
   },
@@ -223,7 +223,7 @@ const workflow1 = () => {
         ? {
             headers: {
               "Content-type": "application/json",
-              "hc-host": "sr.hdlecommercelab.cloud",
+              "hc-host": "sailracing.com",
               "hc-channel": "se",
               "hc-store": "en",
               "hc-cart": createdCartID,
@@ -250,7 +250,8 @@ const workflow1 = () => {
   });
 
   makeRequest.fetchShippingMethods(params, fetchedCart.cart_id);
-  makeRequest.checkout(params, { cart_id: fetchedCart.cart_id });
+  /** Make Checkout Request */
+  // makeRequest.checkout(params, { cart_id: fetchedCart.cart_id });
 };
 
 const workflow2 = () => {
@@ -326,7 +327,7 @@ export const options = {
     { duration: "3m", target: 150 },
     { duration: "3m", target: 170 },
     { duration: "3m", target: 200 },
-    { duration: "20s", target: 1 },
+    { duration: "20s", target: 0 },
   ],
 };
 
@@ -485,7 +486,7 @@ export function backup() {
       http.get(`${url}/checkout/cart`, {
         headers: {
           "Content-type": "application/json",
-          "hc-host": "sr.hdlecommercelab.cloud",
+          "hc-host": "sailracing.com",
           "hc-channel": "se",
           "hc-store": "en",
           "hc-cart": cartID,
